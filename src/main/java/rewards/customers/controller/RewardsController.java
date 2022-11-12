@@ -1,4 +1,4 @@
-package rewards.customers.controller;
+ package rewards.customers.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,6 +15,7 @@ import rewards.customers.service.RewardsService;
 @RestController
 @RequestMapping("/customer")
 public class RewardsController {
+	//sys
 	@Autowired
 	RewardsService rewardsService;
 	@PostMapping("/reward")
