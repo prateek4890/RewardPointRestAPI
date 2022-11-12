@@ -4,10 +4,7 @@ import java.text.ParseException;
 import java.time.LocalDate;
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
@@ -87,10 +84,10 @@ public class RewardsServiceImpl implements RewardsService {
 		 * Data set containing customer id,spend amount ,transaction no,transaction data
 		 */
                 
-		return List.of(new CustomerModal(1, 120, 1111, LocalDate.parse("2022-08-01")),
+		return Arrays.asList(new CustomerModal(1, 120, 1111, LocalDate.parse("2022-08-01")),
 				new CustomerModal(1, 220, 1112, LocalDate.parse("2022-06-01")),
 				new CustomerModal(1, 50, 1113, LocalDate.parse("2022-08-01")),
-				new CustomerModal(1, 0, 1114, LocalDate.parse("2022-08-01")),
+				new CustomerModal(1, 5, 1114, LocalDate.parse("2022-08-01")),
 				new CustomerModal(1, 100, 1115, LocalDate.parse("2022-07-30")),
 				new CustomerModal(1, 99, 1116, LocalDate.parse("2022-08-01")),
 				new CustomerModal(1, 330, 1117, LocalDate.parse("2022-08-01")),
